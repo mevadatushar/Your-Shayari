@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3E3E3"
+    tools:context=".activity.DisplayShayariActivity">
+
+    <LinearLayout
+        android:background="@drawable/cardview_radius2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardElevation="@dimen/_50sdp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/txtDisplayShayari"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sbold"
+                android:gravity="center"
+                android:text="Shayari Category"
+                android:textAlignment="center"
+                android:textColor="#ED1E2432"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:background="@drawable/cardview_radius">
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_marginTop="@dimen/_1sdp"
+            android:id="@+id/rvcDisplayShayari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

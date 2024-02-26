@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_cornor">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:padding="@dimen/_10sdp"
+            android:text="Select Any One !"
+            android:textAlignment="center"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="201dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/Imggallery"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+       android:layout_marginHorizontal="40dp"
+        android:src="@drawable/gallery"
+       />
+    <ImageView
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/imgCamera"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/camera"
+       />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/gallery"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="Gallery"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:text="Camera"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

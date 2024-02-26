@@ -1,0 +1,20 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <stroke
+        android:width="1.5dp"
+        android:color="#1e2432" />
+
+    <corners
+        android:radius="4dp" />
+
+</shape>
+
+
+
+<!-- android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/textinputborder"-->

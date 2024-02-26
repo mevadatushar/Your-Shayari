@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context=".activity.ShayariShowcaseActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@drawable/cardview_radius2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:elevation="@dimen/_10sdp"
+        android:id="@+id/cdView"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+       android:layout_marginVertical="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/relLayout"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/gradient"
+                        android:id="@+id/imgBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                      />
+
+                    <TextView
+                        android:id="@+id/txtShayari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:fontFamily="@font/almendra"
+                        android:text="XYZ"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgAddImage"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        android:src="@drawable/add" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/radius_item_shayari"
+                        android:gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/imgCopy"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/toucheffect"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="onViewClick">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:src="@drawable/copy" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llLike"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/toucheffect"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="onViewClick">
+
+                            <ImageView
+                                android:id="@+id/imgDownload"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:src="@drawable/downloa" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/imgShare"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/toucheffect"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:onClick="onViewClick">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_margin="@dimen/_7sdp"
+                                android:src="@drawable/share" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

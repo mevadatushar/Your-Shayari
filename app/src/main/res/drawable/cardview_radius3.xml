@@ -1,0 +1,9 @@
+<!-- specific_corners_rounded.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#7B91C3"/> <!-- Replace with your desired color -->
+    <corners
+        android:topRightRadius="@dimen/_13sdp"
+        android:topLeftRadius="@dimen/_13sdp"
+        android:bottomLeftRadius="@dimen/_13sdp"
+        android:bottomRightRadius="@dimen/_13sdp"/>
+</shape>

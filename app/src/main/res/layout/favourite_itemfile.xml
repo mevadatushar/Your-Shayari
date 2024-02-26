@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_175sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <ImageView
+            android:scaleType="center"
+            android:id="@+id/imgTapChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/g3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:gravity="center"
+               >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:id="@+id/txtShayari"
+                    android:fontFamily="@font/almendra"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    tool:text="......." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/radius_item_shayari"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:onClick="onViewClick"
+                    android:background="@drawable/toucheffect"
+                    android:id="@+id/imgCopy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/copy" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:onClick="onViewClick"
+                    android:background="@drawable/toucheffect"
+                    android:id="@+id/llLike"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgLike"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:src="@drawable/heart_pink" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:onClick="onViewClick"
+                    android:background="@drawable/toucheffect"
+                    android:id="@+id/imgShare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:src="@drawable/share" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
